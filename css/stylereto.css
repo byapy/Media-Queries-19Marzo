@@ -1,0 +1,72 @@
+.contenido-principal{
+    display: grid;
+    margin: auto;
+    max-width: 1024;
+    text-align: center;
+}
+
+header,footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    background-color: rgb(255, 54, 54);
+   
+}
+
+nav{
+    grid-template-rows: 50px;
+    display: grid;
+    background-color: rgb(169, 236, 222);
+
+}
+
+
+.gemelos{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px;
+}
+
+.barra{
+    display: grid;
+    grid-template-rows: 80px;
+    background-color: rgb(190, 226, 89);
+}
+.content{
+    display: grid;
+    grid-template-rows: 250px;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+}
+
+
+.imagenes>article:nth-child(even){
+    background-color: rgb(244, 255, 85);
+
+}
+.imagenes>article:nth-child(odd){
+    background-color: rgb(142, 213, 231);
+}
+
+
+.body{
+    margin: 0%;
+}
+
+@media(max-width: 768px)
+{
+    .imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+    }
+
+    .gemelos{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: 50px 50px;
+    }
+}
